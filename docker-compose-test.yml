@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      target: test
+
+    environment:
+      SQLITE_TEST_FILE: ${SQLITE_TEST_FILE:-:memory:}
+
+    # run in band with external mongo
+    command: npm test -- --runInBand
