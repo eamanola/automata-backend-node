@@ -10,7 +10,7 @@ const {
   REDIS_URL,
   SECRET,
   // TODO:
-  SQLITE_FILE = '/home/eamanola/played.db',
+  SQLITE_FILE = ':memory:',
   SQLITE_TEST_FILE = ':memory:',
 } = process.env;
 

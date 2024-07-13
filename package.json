@@ -1,13 +1,13 @@
 {
   "name": "media-library-server",
-  "version": "0.1.77",
+  "version": "0.1.79",
   "description": "media library viewer / playlist",
   "main": "dist/index.bundle.js",
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
     "build": "webpack",
-    "dev": "nodemon src/index.js",
+    "dev": "nodemon --env-file=.env.development.local src/index.js",
     "start": "node dist/index.bundle.js"
   },
   "author": "",
