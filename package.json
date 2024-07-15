@@ -1,6 +1,6 @@
 {
   "name": "media-library-server",
-  "version": "0.1.79",
+  "version": "0.1.81",
   "description": "media library viewer / playlist",
   "main": "dist/index.bundle.js",
   "scripts": {
@@ -13,11 +13,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "automata-app": "github:eamanola/automata-app",
-    "automata-cache": "github:eamanola/automata-cache",
-    "automata-db": "github:eamanola/automata-db",
-    "automata-rest": "github:eamanola/automata-rest",
-    "automata-utils": "github:eamanola/automata-utils",
+    "automata-app": "^0.0.15",
+    "automata-cache": "^0.0.2",
+    "automata-db": "^0.0.10",
+    "automata-rest": "^0.0.21",
+    "automata-utils": "^0.0.6",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "yup": "^1.4.0"
