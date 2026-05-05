@@ -7,14 +7,18 @@ const { testPath } = expect.getState();
 const skip = () => SKIP_PATHS.some((skipPath) => testPath.includes(skipPath));
 
 beforeAll(async () => {
-  if (skip()) { return; }
+  if (skip()) {
+    return;
+  }
 
   await initDB(DB_URL);
   await connectDB();
 });
 
 afterAll(async () => {
-  if (skip()) { return; }
+  if (skip()) {
+    return;
+  }
 
   await closeDB();
 });

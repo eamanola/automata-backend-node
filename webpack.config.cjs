@@ -1,5 +1,6 @@
 const TerserPlugin = require('terser-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
+const { join } = require('node:path');
 
 const entry = {
   index: ['./src/index.js'],
@@ -7,7 +8,7 @@ const entry = {
 
 const output = {
   filename: 'index.bundle.js',
-  path: `${__dirname}/dist`,
+  path: join(__dirname, 'dist'),
 };
 
 const aModule = {
@@ -26,8 +27,8 @@ const aModule = {
 const plugins = [];
 
 const optimization = {
-  minimizer: [new TerserPlugin()],
   minimize: true,
+  minimizer: [new TerserPlugin()],
 };
 
 const resolve = {};
