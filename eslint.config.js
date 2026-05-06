@@ -4,16 +4,16 @@ import { configs as importX } from 'eslint-plugin-import-x';
 import globals from 'globals';
 
 export default [
+  {
+    ignores: ['dist/*'],
+  },
   // more configs https://github.com/Solant/eslint-stylistic-airbnb#configuration-reference
   airbnb.configs['flat/strict'],
   // requires eslint-plugin-import-x
   importX['flat/recommended'],
   airbnb.configs['flat/addon-import'],
   {
-    ignores: ['dist/*'],
-  },
-  {
-    // deprecated overrides
+    // eslint-stylistic-airbnb deprecated overrides
     rules: {
       '@stylistic/line-comment-position': [
         'error',
@@ -27,17 +27,6 @@ export default [
   },
   {
     rules: {
-      'import-x/no-extraneous-dependencies': [
-        'error',
-        {
-          devDependencies: [
-            'eslint.config.js',
-            'webpack.config.cjs',
-            '**/*.test.js',
-            './bin/download-memory-server-binaries.js',
-          ],
-        },
-      ],
       'no-console': [
         'warn',
         {
@@ -75,7 +64,17 @@ export default [
       },
     },
     rules: {
-      'import/no-commonjs': ['off'],
+      'import-x/no-extraneous-dependencies': [
+        'error',
+        {
+          devDependencies: [
+            'eslint.config.js',
+            'webpack.config.cjs',
+            '**/*.test.js',
+            './bin/download-memory-server-binaries.js',
+          ],
+        },
+      ],
     },
   },
 ];
