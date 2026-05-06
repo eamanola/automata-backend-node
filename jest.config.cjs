@@ -4,8 +4,5 @@ module.exports = {
     './jest/jest.setup.mongodb-memory-server.js',
     './jest/jest.setup.redis.js',
   ],
-  setupFilesAfterEnv: [
-    './jest/jest.setup.db.js',
-    './jest/jest.setup.cache.js',
-  ],
+  setupFilesAfterEnv: ['./jest/jest.setup.db.js', './jest/jest.setup.cache.js'],
 };

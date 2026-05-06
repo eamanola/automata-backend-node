@@ -1,39 +1,47 @@
-import airbnb from 'eslint-config-xaxa/airbnb';
+// import airbnb from 'eslint-config-xaxa/airbnb';
+import airbnb from 'eslint-stylistic-airbnb';
 import globals from 'globals';
 
-export default airbnb(
-  {
-  // airbnb options
-  },
+export default [
+  airbnb.configs['flat/strict'],
   {
     ignores: ['dist/*'],
   },
   {
     rules: {
-      'import/extensions': ['off'],
-      'import/no-extraneous-dependencies': [
+      'array-element-newline': [
         'error',
         {
-          devDependencies: [
-            'eslint.config.js',
-            'webpack.config.cjs',
-            '**/*.test.js',
+          ArrayExpression: 'consistent',
+          ArrayPattern: { minItems: 3 },
+        },
+      ],
+      'import/extensions': ['off'],
+      // 'import/no-extraneous-dependencies': [
+      //   'error',
+      //   {
+      //     devDependencies: [
+      //       'eslint.config.js',
+      //       'webpack.config.cjs',
+      //       '**/*.test.js',
+      //     ],
+      //   },
+      // ],
+      'no-console': [
+        'warn',
+        {
+          allow: [
+            'info',
+            'warn',
+            'error',
           ],
         },
       ],
-      'no-console': ['warn', { allow: ['info', 'warn', 'error'] }],
       'prefer-named-capture-group': ['error'],
       'require-unicode-regexp': ['error'],
       'sort-keys': ['error'],
     },
   },
-  // {
-  //   languageOptions: {
-  //     // globals: {
-  //     //   ...globals.node,
-  //     // },
-  //   },
-  // },
   {
     files: ['**/*.test.js', 'jest/**'],
     languageOptions: {
@@ -50,8 +58,13 @@ export default airbnb(
   },
   // project specific
   {
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
     rules: {
       'import/no-commonjs': ['off'],
     },
   },
-);
+];
