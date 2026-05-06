@@ -2,7 +2,6 @@ const { join } = require('node:path');
 
 const TerserPlugin = require('terser-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
-const { join } = require('node:path');
 
 const entry = {
   index: ['./src/index.js'],
