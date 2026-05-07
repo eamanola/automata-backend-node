@@ -7,10 +7,9 @@ export default [
   {
     ignores: ['dist/*'],
   },
-  // more configs https://github.com/Solant/eslint-stylistic-airbnb#configuration-reference
   airbnb.configs['flat/strict'],
-  // requires eslint-plugin-import-x
   importX['flat/recommended'],
+  // requires eslint-plugin-import-x
   airbnb.configs['flat/addon-import'],
   {
     // eslint-stylistic-airbnb deprecated overrides
