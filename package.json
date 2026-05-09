@@ -1,6 +1,6 @@
 {
   "name": "media-library-server",
-  "version": "0.1.124",
+  "version": "0.1.125",
   "description": "media library viewer / playlist",
   "main": "dist/index.bundle.js",
   "scripts": {
