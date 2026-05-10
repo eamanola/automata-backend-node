@@ -13,7 +13,7 @@ importers:
         version: 10.0.1(eslint@10.3.0)
       automata-app:
         specifier: github:eamanola/automata-app
-        version: git+https://git@github.com:eamanola/automata-app.git#0a782bd6cb299933dd74f0a746e5f76b6dc34719
+        version: git+https://git@github.com:eamanola/automata-app.git#1906ccf3dc8fb34d221b2cf7f0ae936735f91c12
       automata-cache:
         specifier: github:eamanola/automata-cache
         version: https://codeload.github.com/eamanola/automata-cache/tar.gz/17044177f61dc0cfee06c60adc5e56ada523fc2a
@@ -1242,9 +1242,9 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  automata-app@git+https://git@github.com:eamanola/automata-app.git#0a782bd6cb299933dd74f0a746e5f76b6dc34719:
-    resolution: {commit: 0a782bd6cb299933dd74f0a746e5f76b6dc34719, repo: git@github.com:eamanola/automata-app.git, type: git}
-    version: 0.1.4
+  automata-app@git+https://git@github.com:eamanola/automata-app.git#1906ccf3dc8fb34d221b2cf7f0ae936735f91c12:
+    resolution: {commit: 1906ccf3dc8fb34d221b2cf7f0ae936735f91c12, repo: git@github.com:eamanola/automata-app.git, type: git}
+    version: 0.1.5
 
   automata-cache@https://codeload.github.com/eamanola/automata-cache/tar.gz/17044177f61dc0cfee06c60adc5e56ada523fc2a:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/eamanola/automata-cache/tar.gz/17044177f61dc0cfee06c60adc5e56ada523fc2a}
@@ -4671,7 +4671,7 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  automata-app@git+https://git@github.com:eamanola/automata-app.git#0a782bd6cb299933dd74f0a746e5f76b6dc34719:
+  automata-app@git+https://git@github.com:eamanola/automata-app.git#1906ccf3dc8fb34d221b2cf7f0ae936735f91c12:
     dependencies:
       automata-user-management: git+https://git@github.com:eamanola/automata-user-management.git#bc1e5c99424ae027aab389fe753adf4862680f8f
       automata-utils: git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f
