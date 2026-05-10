@@ -2,6 +2,7 @@ require('dotenv').config({ quiet: true });
 
 const {
   AUTOMATA_DB_ENGINE = 'sqlite',
+  EMAIL_VERIFICATION_SECRET = null,
   MONGO_TEST_URL = 'use-mongodb-memory-server',
   MONGO_URL,
   NODE_ENV,
@@ -28,6 +29,7 @@ const DB_URL = DB_ENGINE === 'mongo' ? MONGO : SQLITE;
 
 module.exports = {
   DB_URL,
+  EMAIL_VERIFICATION_SECRET,
   NODE_ENV,
   PORT,
   REDIS_URL: IS_TEST ? REDIS_TEST_URL : REDIS_URL,
