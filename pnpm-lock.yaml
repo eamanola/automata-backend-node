@@ -13,16 +13,16 @@ importers:
         version: 10.0.1(eslint@10.3.0)
       automata-app:
         specifier: github:eamanola/automata-app
-        version: git+https://git@github.com:eamanola/automata-app.git#ca0d33791587868f40d1847a03064a5f55ae6022
+        version: git+https://git@github.com:eamanola/automata-app.git#be136884d4d074fb554bc34bdefda4f456527f7a
       automata-cache:
         specifier: github:eamanola/automata-cache
         version: https://codeload.github.com/eamanola/automata-cache/tar.gz/17044177f61dc0cfee06c60adc5e56ada523fc2a
       automata-db:
         specifier: github:eamanola/automata-db
-        version: git+https://git@github.com:eamanola/automata-db.git#8fe1f76d6436f3806b85f9bb698d0211a3a5d188
+        version: git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744
       automata-rest:
         specifier: github:eamanola/automata-rest
-        version: git+https://git@github.com:eamanola/automata-rest.git#5142a7ac1d4a1648d4465e5db26c2c5059561b91
+        version: git+https://git@github.com:eamanola/automata-rest.git#76f04ed1f421551b38e14f515bc79dcd42d57ef9
       automata-utils:
         specifier: github:eamanola/automata-utils
         version: git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f
@@ -1242,29 +1242,29 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  automata-app@git+https://git@github.com:eamanola/automata-app.git#ca0d33791587868f40d1847a03064a5f55ae6022:
-    resolution: {commit: ca0d33791587868f40d1847a03064a5f55ae6022, repo: git@github.com:eamanola/automata-app.git, type: git}
-    version: 0.0.26
+  automata-app@git+https://git@github.com:eamanola/automata-app.git#be136884d4d074fb554bc34bdefda4f456527f7a:
+    resolution: {commit: be136884d4d074fb554bc34bdefda4f456527f7a, repo: git@github.com:eamanola/automata-app.git, type: git}
+    version: 0.1.3
 
   automata-cache@https://codeload.github.com/eamanola/automata-cache/tar.gz/17044177f61dc0cfee06c60adc5e56ada523fc2a:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/eamanola/automata-cache/tar.gz/17044177f61dc0cfee06c60adc5e56ada523fc2a}
     version: 0.0.7
 
-  automata-db@git+https://git@github.com:eamanola/automata-db.git#8fe1f76d6436f3806b85f9bb698d0211a3a5d188:
-    resolution: {commit: 8fe1f76d6436f3806b85f9bb698d0211a3a5d188, repo: git@github.com:eamanola/automata-db.git, type: git}
-    version: 0.0.22
+  automata-db@git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744:
+    resolution: {commit: 1c2e79fa8f0cdb95752dec7b03aa70105a881744, repo: git@github.com:eamanola/automata-db.git, type: git}
+    version: 0.1.1
 
-  automata-email-verification@git+https://git@github.com:eamanola/automata-email-verification.git#33987c081fca1d71fa17305fa6390f104f26b1ce:
-    resolution: {commit: 33987c081fca1d71fa17305fa6390f104f26b1ce, repo: git@github.com:eamanola/automata-email-verification.git, type: git}
-    version: 0.0.17
+  automata-email-verification@git+https://git@github.com:eamanola/automata-email-verification.git#16208b46205b7b8da9bf42ecb20d013c359e6443:
+    resolution: {commit: 16208b46205b7b8da9bf42ecb20d013c359e6443, repo: git@github.com:eamanola/automata-email-verification.git, type: git}
+    version: 0.1.2
 
-  automata-rest@git+https://git@github.com:eamanola/automata-rest.git#5142a7ac1d4a1648d4465e5db26c2c5059561b91:
-    resolution: {commit: 5142a7ac1d4a1648d4465e5db26c2c5059561b91, repo: git@github.com:eamanola/automata-rest.git, type: git}
-    version: 0.0.28
+  automata-rest@git+https://git@github.com:eamanola/automata-rest.git#76f04ed1f421551b38e14f515bc79dcd42d57ef9:
+    resolution: {commit: 76f04ed1f421551b38e14f515bc79dcd42d57ef9, repo: git@github.com:eamanola/automata-rest.git, type: git}
+    version: 0.1.1
 
-  automata-user-management@git+https://git@github.com:eamanola/automata-user-management.git#a984f8fccf0f9ffb04483ad76c0b752f08d458d6:
-    resolution: {commit: a984f8fccf0f9ffb04483ad76c0b752f08d458d6, repo: git@github.com:eamanola/automata-user-management.git, type: git}
-    version: 0.0.33
+  automata-user-management@git+https://git@github.com:eamanola/automata-user-management.git#69c2c42f14aff66477c7dffcf08585b3cd68ba7c:
+    resolution: {commit: 69c2c42f14aff66477c7dffcf08585b3cd68ba7c, repo: git@github.com:eamanola/automata-user-management.git, type: git}
+    version: 0.1.4
 
   automata-utils@git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f:
     resolution: {commit: 5632caceabde51451bae400352435b884b64121f, repo: git@github.com:eamanola/automata-utils.git, type: git}
@@ -4675,10 +4675,10 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  automata-app@git+https://git@github.com:eamanola/automata-app.git#ca0d33791587868f40d1847a03064a5f55ae6022:
+  automata-app@git+https://git@github.com:eamanola/automata-app.git#be136884d4d074fb554bc34bdefda4f456527f7a:
     dependencies:
-      automata-email-verification: git+https://git@github.com:eamanola/automata-email-verification.git#33987c081fca1d71fa17305fa6390f104f26b1ce
-      automata-user-management: git+https://git@github.com:eamanola/automata-user-management.git#a984f8fccf0f9ffb04483ad76c0b752f08d458d6
+      automata-email-verification: git+https://git@github.com:eamanola/automata-email-verification.git#16208b46205b7b8da9bf42ecb20d013c359e6443
+      automata-user-management: git+https://git@github.com:eamanola/automata-user-management.git#69c2c42f14aff66477c7dffcf08585b3cd68ba7c
       automata-utils: git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f
       cors: 2.8.6
       dotenv: 17.4.2
@@ -4702,7 +4702,7 @@ snapshots:
       - '@node-rs/xxhash'
       - '@opentelemetry/api'
 
-  automata-db@git+https://git@github.com:eamanola/automata-db.git#8fe1f76d6436f3806b85f9bb698d0211a3a5d188:
+  automata-db@git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744:
     dependencies:
       better-sqlite3: 12.9.0
       dotenv: 17.4.2
@@ -4717,9 +4717,9 @@ snapshots:
       - snappy
       - socks
 
-  automata-email-verification@git+https://git@github.com:eamanola/automata-email-verification.git#33987c081fca1d71fa17305fa6390f104f26b1ce:
+  automata-email-verification@git+https://git@github.com:eamanola/automata-email-verification.git#16208b46205b7b8da9bf42ecb20d013c359e6443:
     dependencies:
-      automata-db: git+https://git@github.com:eamanola/automata-db.git#8fe1f76d6436f3806b85f9bb698d0211a3a5d188
+      automata-db: git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744
       automata-utils: git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f
       dotenv: 17.4.2
       express: 5.2.1
@@ -4734,10 +4734,10 @@ snapshots:
       - socks
       - supports-color
 
-  automata-rest@git+https://git@github.com:eamanola/automata-rest.git#5142a7ac1d4a1648d4465e5db26c2c5059561b91:
+  automata-rest@git+https://git@github.com:eamanola/automata-rest.git#76f04ed1f421551b38e14f515bc79dcd42d57ef9:
     dependencies:
       automata-cache: https://codeload.github.com/eamanola/automata-cache/tar.gz/17044177f61dc0cfee06c60adc5e56ada523fc2a
-      automata-db: git+https://git@github.com:eamanola/automata-db.git#8fe1f76d6436f3806b85f9bb698d0211a3a5d188
+      automata-db: git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744
       automata-utils: git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f
       dotenv: 17.4.2
       express: 5.2.1
@@ -4754,10 +4754,9 @@ snapshots:
       - socks
       - supports-color
 
-  automata-user-management@git+https://git@github.com:eamanola/automata-user-management.git#a984f8fccf0f9ffb04483ad76c0b752f08d458d6:
+  automata-user-management@git+https://git@github.com:eamanola/automata-user-management.git#69c2c42f14aff66477c7dffcf08585b3cd68ba7c:
     dependencies:
-      automata-db: git+https://git@github.com:eamanola/automata-db.git#8fe1f76d6436f3806b85f9bb698d0211a3a5d188
-      automata-email-verification: git+https://git@github.com:eamanola/automata-email-verification.git#33987c081fca1d71fa17305fa6390f104f26b1ce
+      automata-db: git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744
       automata-utils: git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f
       bcrypt: 6.0.0
       dotenv: 17.4.2

@@ -1,7 +1,11 @@
-const app = require('automata-app');
+const appBuilder = require('automata-app');
 
 const router = require('./media-library-server/router');
 
-app.use(router);
+module.exports = ({ db }) => {
+  const app = appBuilder({ db });
 
-module.exports = app;
+  app.use(router({ db }));
+
+  return app;
+};

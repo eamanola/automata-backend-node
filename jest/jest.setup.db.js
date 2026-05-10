@@ -1,4 +1,4 @@
-const { initDB, connectDB, closeDB } = require('automata-db');
+const { connectDB, closeDB } = require('automata-db');
 
 const { DB_URL } = require('../src/config');
 
@@ -11,8 +11,7 @@ beforeAll(async () => {
     return;
   }
 
-  await initDB(DB_URL);
-  await connectDB();
+  global.client = await connectDB(DB_URL);
 });
 
 afterAll(async () => {
@@ -20,5 +19,5 @@ afterAll(async () => {
     return;
   }
 
-  await closeDB();
+  await closeDB(global.client);
 });
