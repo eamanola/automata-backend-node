@@ -14,8 +14,10 @@ const { logger } = utils;
 let db;
 
 const shutdown = (server) => async () => {
-  if (db) await closeDB(db);
-  logger.info('db connection closed');
+  if (db) {
+    await closeDB(db);
+    logger.info('db connection closed');
+  }
 
   if (REDIS_ENABLED) await closeCache();
   logger.info('cache connection closed');

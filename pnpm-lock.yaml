@@ -13,13 +13,13 @@ importers:
         version: 10.0.1(eslint@10.3.0)
       automata-app:
         specifier: github:eamanola/automata-app
-        version: git+https://git@github.com:eamanola/automata-app.git#be136884d4d074fb554bc34bdefda4f456527f7a
+        version: git+https://git@github.com:eamanola/automata-app.git#0a782bd6cb299933dd74f0a746e5f76b6dc34719
       automata-cache:
         specifier: github:eamanola/automata-cache
         version: https://codeload.github.com/eamanola/automata-cache/tar.gz/17044177f61dc0cfee06c60adc5e56ada523fc2a
       automata-db:
         specifier: github:eamanola/automata-db
-        version: git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744
+        version: git+https://git@github.com:eamanola/automata-db.git#acf4b47cc19b7dbde9ee615b00c9f58095be2b8d
       automata-rest:
         specifier: github:eamanola/automata-rest
         version: git+https://git@github.com:eamanola/automata-rest.git#76f04ed1f421551b38e14f515bc79dcd42d57ef9
@@ -67,8 +67,8 @@ importers:
         specifier: ^9.1.7
         version: 9.1.7
       jest:
-        specifier: ^30.4.1
-        version: 30.4.1(@types/node@25.6.2)
+        specifier: ^30.4.2
+        version: 30.4.2(@types/node@25.6.2)
       mongodb-memory-server:
         specifier: ^11.1.0
         version: 11.1.0
@@ -769,8 +769,8 @@ packages:
     resolution: {integrity: sha512-v3bhyxUh9Hgmo5p6hAOXe14/R3ZxZDOsvHleh4B07z3m/x4/ngPUXEm9XwK4sF4u+f+P2ORb0Ge+MgpaqRMVDA==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
-  '@jest/core@30.4.1':
-    resolution: {integrity: sha512-zNfBGtukVyc0ClmSzXgeP6eseumdekHfrqa++GsPK8ZUm9Hm3TY8X8LQvGfZVrp23RSz9ebbcruXnAv3no0Q+g==}
+  '@jest/core@30.4.2':
+    resolution: {integrity: sha512-TZJA6cPJUFxoWhxaLo8t0VX/MZX2wPWr0uIDvLSHIvN4gu9h02vSzqI2kBADG1ExqQlC+cY09xKMSreivvrChQ==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
     peerDependencies:
       node-notifier: ^8.0.1 || ^9.0.0 || ^10.0.0
@@ -1242,29 +1242,25 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  automata-app@git+https://git@github.com:eamanola/automata-app.git#be136884d4d074fb554bc34bdefda4f456527f7a:
-    resolution: {commit: be136884d4d074fb554bc34bdefda4f456527f7a, repo: git@github.com:eamanola/automata-app.git, type: git}
-    version: 0.1.3
+  automata-app@git+https://git@github.com:eamanola/automata-app.git#0a782bd6cb299933dd74f0a746e5f76b6dc34719:
+    resolution: {commit: 0a782bd6cb299933dd74f0a746e5f76b6dc34719, repo: git@github.com:eamanola/automata-app.git, type: git}
+    version: 0.1.4
 
   automata-cache@https://codeload.github.com/eamanola/automata-cache/tar.gz/17044177f61dc0cfee06c60adc5e56ada523fc2a:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/eamanola/automata-cache/tar.gz/17044177f61dc0cfee06c60adc5e56ada523fc2a}
     version: 0.0.7
 
-  automata-db@git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744:
-    resolution: {commit: 1c2e79fa8f0cdb95752dec7b03aa70105a881744, repo: git@github.com:eamanola/automata-db.git, type: git}
-    version: 0.1.1
-
-  automata-email-verification@git+https://git@github.com:eamanola/automata-email-verification.git#16208b46205b7b8da9bf42ecb20d013c359e6443:
-    resolution: {commit: 16208b46205b7b8da9bf42ecb20d013c359e6443, repo: git@github.com:eamanola/automata-email-verification.git, type: git}
-    version: 0.1.2
+  automata-db@git+https://git@github.com:eamanola/automata-db.git#acf4b47cc19b7dbde9ee615b00c9f58095be2b8d:
+    resolution: {commit: acf4b47cc19b7dbde9ee615b00c9f58095be2b8d, repo: git@github.com:eamanola/automata-db.git, type: git}
+    version: 0.1.3
 
   automata-rest@git+https://git@github.com:eamanola/automata-rest.git#76f04ed1f421551b38e14f515bc79dcd42d57ef9:
     resolution: {commit: 76f04ed1f421551b38e14f515bc79dcd42d57ef9, repo: git@github.com:eamanola/automata-rest.git, type: git}
     version: 0.1.1
 
-  automata-user-management@git+https://git@github.com:eamanola/automata-user-management.git#69c2c42f14aff66477c7dffcf08585b3cd68ba7c:
-    resolution: {commit: 69c2c42f14aff66477c7dffcf08585b3cd68ba7c, repo: git@github.com:eamanola/automata-user-management.git, type: git}
-    version: 0.1.4
+  automata-user-management@git+https://git@github.com:eamanola/automata-user-management.git#bc1e5c99424ae027aab389fe753adf4862680f8f:
+    resolution: {commit: bc1e5c99424ae027aab389fe753adf4862680f8f, repo: git@github.com:eamanola/automata-user-management.git, type: git}
+    version: 0.1.5
 
   automata-utils@git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f:
     resolution: {commit: 5632caceabde51451bae400352435b884b64121f, repo: git@github.com:eamanola/automata-utils.git, type: git}
@@ -2192,12 +2188,12 @@ packages:
     resolution: {integrity: sha512-IuctmYrxi21iOSOaIXpJWalHyPAsVv0GeBHKDn8C1CA4W5htHn7INL+wdnL4Bo0+olEndvAFkmb++tIQJG+vvg==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
-  jest-circus@30.4.1:
-    resolution: {integrity: sha512-kcCeuPX8Kh6TSujMOIzaAXWvvr41LFlbhLyEYzcc8doXIuGdX+hOxSxbAH7sJItvi1H2ZOU5B3ujD3FLiX5e4g==}
+  jest-circus@30.4.2:
+    resolution: {integrity: sha512-rvHH7VlY6LgbJXJTQ87GW62g1FntOtbhh0zT+v04kC+pgL6aBKyYINXxWukCpj3dcIBMw5/XUbtDS9dU9JTXeQ==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
-  jest-cli@30.4.1:
-    resolution: {integrity: sha512-wh86tmU2ak4aqaVg4Y+OwNys9Plrh4478+o8Zapeo8iz95uwW/WY+A4Yb3pd6C3ilHhY+Ue6V+yDM8G+zUDX+A==}
+  jest-cli@30.4.2:
+    resolution: {integrity: sha512-jfA2ocvVHMXS2QijrJ0d31ektP+d/W0T5RpcTX2Pq+3sVqHlsXVCM2+FmwpL+bdY8OfHpIg9xMxLF17Zg0U49Q==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
     hasBin: true
     peerDependencies:
@@ -2206,8 +2202,8 @@ packages:
       node-notifier:
         optional: true
 
-  jest-config@30.4.1:
-    resolution: {integrity: sha512-AHAI8llsQFfz3oE6/AcBrP7tJdVnqczmBvnXONO8RWRqKefLaxKmkIUq0otc+QTZ/0gxBP7wBLfh6caMmNZcLA==}
+  jest-config@30.4.2:
+    resolution: {integrity: sha512-rNHAShJQqQwFNoL0hbf3BphSBOWnpOUAKvidLS/AjNVLPfoj5mSf4jQMfW3cYOs6hXeZC7nF7mDHaBnbxELOzg==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
     peerDependencies:
       '@types/node': '*'
@@ -2270,20 +2266,20 @@ packages:
     resolution: {integrity: sha512-mWlvLviKIgIQ8VCuM1xRdD0TWp3zlzionlmDBjuXVBs+VkmXq6FgW9T4Emr7oGz/Rk6feDCGyiugolcQEyp3mg==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
-  jest-resolve-dependencies@30.4.1:
-    resolution: {integrity: sha512-MstV4pRIfUBs9kuMHSzYHPMPYHqQGoknfRv6tEEpOX7755aaK4Hk5ICwTtOHyjCc3+hYMoxnKF3ENu3iayEIog==}
+  jest-resolve-dependencies@30.4.2:
+    resolution: {integrity: sha512-gDiVh1I+GxYzz9oXlyw+1wv6VOYX1WYxMOfjsA3iGKePV2oxmbHhwxfkALxNxYy1ciw6APWwkW2zZONwP97aEQ==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
   jest-resolve@30.4.1:
     resolution: {integrity: sha512-Zry8Yq/yJcNAZ7dJ5F2heic8AheXvbFZ7XI5V+h28nrYZ7Qoyy4dItq8OodjnYD270mvX+ZudmrNV9cysqhW5Q==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
-  jest-runner@30.4.1:
-    resolution: {integrity: sha512-NbStoXGdqMuYF8m7NEQ6FH2gH4eTvcSyz7BINLLuGacdAKtlsDa7PzPSZUtyiBfdMycO2Yeyn3ibfzUl2plRjA==}
+  jest-runner@30.4.2:
+    resolution: {integrity: sha512-2dw0PslVYXxffXGpLo+Ejad+KcI1Qkjn7f4X4619gf21oCUmL+SPfjqIa/losUem3yEOvfNZe/F1HWUcNpODcg==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
-  jest-runtime@30.4.1:
-    resolution: {integrity: sha512-Ityu3lzs8+it7ABsi7N52Px3Ic1az9w+sBkP/r1xK5MaIq1BdYkYonftpwtX5AtibDSFrKTNEW9KLUXAynXIcA==}
+  jest-runtime@30.4.2:
+    resolution: {integrity: sha512-3/5e8iPz2k/VLqlr8DgTftYyLUv8Su3FkCAO2/Od81UsUTpSxOrS6O5x5KkoQwyUjmpYyDJKeyAvg2T2nvpNkQ==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
   jest-snapshot@30.4.1:
@@ -2310,8 +2306,8 @@ packages:
     resolution: {integrity: sha512-SHynN/q/QD++iNyvMdy+WMmbCGk8jIsNcRxycXbWubSOhvo6T+j2afcfUSl+3hYsiBebOTo0cT7c2H7CXugu1g==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
-  jest@30.4.1:
-    resolution: {integrity: sha512-ZXSQlP2bAgIq0XmJ49HNmrgXSoWoHEzciSw3YhPbOA3gVMl3CyLdHjbpV+dbR7ggOVwSEo4cl5OOaYwRrmWqEA==}
+  jest@30.4.2:
+    resolution: {integrity: sha512-Yi1jqNC/Oq0N4hBgNH/YvBpP1P57QqundgytzYqy3yqAa7NZPNjSoi4SGbRAXDMdBzNE6xBCi5U7RgfrvMEUVQ==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
     hasBin: true
     peerDependencies:
@@ -4132,7 +4128,7 @@ snapshots:
       jest-util: 30.4.1
       slash: 3.0.0
 
-  '@jest/core@30.4.1':
+  '@jest/core@30.4.2':
     dependencies:
       '@jest/console': 30.4.1
       '@jest/pattern': 30.4.0
@@ -4148,14 +4144,14 @@ snapshots:
       fast-json-stable-stringify: 2.1.0
       graceful-fs: 4.2.11
       jest-changed-files: 30.4.1
-      jest-config: 30.4.1(@types/node@25.6.2)
+      jest-config: 30.4.2(@types/node@25.6.2)
       jest-haste-map: 30.4.1
       jest-message-util: 30.4.1
       jest-regex-util: 30.4.0
       jest-resolve: 30.4.1
-      jest-resolve-dependencies: 30.4.1
-      jest-runner: 30.4.1
-      jest-runtime: 30.4.1
+      jest-resolve-dependencies: 30.4.2
+      jest-runner: 30.4.2
+      jest-runtime: 30.4.2
       jest-snapshot: 30.4.1
       jest-util: 30.4.1
       jest-validate: 30.4.1
@@ -4675,10 +4671,9 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  automata-app@git+https://git@github.com:eamanola/automata-app.git#be136884d4d074fb554bc34bdefda4f456527f7a:
+  automata-app@git+https://git@github.com:eamanola/automata-app.git#0a782bd6cb299933dd74f0a746e5f76b6dc34719:
     dependencies:
-      automata-email-verification: git+https://git@github.com:eamanola/automata-email-verification.git#16208b46205b7b8da9bf42ecb20d013c359e6443
-      automata-user-management: git+https://git@github.com:eamanola/automata-user-management.git#69c2c42f14aff66477c7dffcf08585b3cd68ba7c
+      automata-user-management: git+https://git@github.com:eamanola/automata-user-management.git#bc1e5c99424ae027aab389fe753adf4862680f8f
       automata-utils: git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f
       cors: 2.8.6
       dotenv: 17.4.2
@@ -4702,7 +4697,7 @@ snapshots:
       - '@node-rs/xxhash'
       - '@opentelemetry/api'
 
-  automata-db@git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744:
+  automata-db@git+https://git@github.com:eamanola/automata-db.git#acf4b47cc19b7dbde9ee615b00c9f58095be2b8d:
     dependencies:
       better-sqlite3: 12.9.0
       dotenv: 17.4.2
@@ -4717,27 +4712,10 @@ snapshots:
       - snappy
       - socks
 
-  automata-email-verification@git+https://git@github.com:eamanola/automata-email-verification.git#16208b46205b7b8da9bf42ecb20d013c359e6443:
-    dependencies:
-      automata-db: git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744
-      automata-utils: git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f
-      dotenv: 17.4.2
-      express: 5.2.1
-      yup: 1.7.1
-    transitivePeerDependencies:
-      - '@aws-sdk/credential-providers'
-      - '@mongodb-js/zstd'
-      - gcp-metadata
-      - kerberos
-      - mongodb-client-encryption
-      - snappy
-      - socks
-      - supports-color
-
   automata-rest@git+https://git@github.com:eamanola/automata-rest.git#76f04ed1f421551b38e14f515bc79dcd42d57ef9:
     dependencies:
       automata-cache: https://codeload.github.com/eamanola/automata-cache/tar.gz/17044177f61dc0cfee06c60adc5e56ada523fc2a
-      automata-db: git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744
+      automata-db: git+https://git@github.com:eamanola/automata-db.git#acf4b47cc19b7dbde9ee615b00c9f58095be2b8d
       automata-utils: git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f
       dotenv: 17.4.2
       express: 5.2.1
@@ -4754,9 +4732,9 @@ snapshots:
       - socks
       - supports-color
 
-  automata-user-management@git+https://git@github.com:eamanola/automata-user-management.git#69c2c42f14aff66477c7dffcf08585b3cd68ba7c:
+  automata-user-management@git+https://git@github.com:eamanola/automata-user-management.git#bc1e5c99424ae027aab389fe753adf4862680f8f:
     dependencies:
-      automata-db: git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744
+      automata-db: git+https://git@github.com:eamanola/automata-db.git#acf4b47cc19b7dbde9ee615b00c9f58095be2b8d
       automata-utils: git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f
       bcrypt: 6.0.0
       dotenv: 17.4.2
@@ -5691,7 +5669,7 @@ snapshots:
       jest-util: 30.4.1
       p-limit: 3.1.0
 
-  jest-circus@30.4.1:
+  jest-circus@30.4.2:
     dependencies:
       '@jest/environment': 30.4.1
       '@jest/expect': 30.4.1
@@ -5705,7 +5683,7 @@ snapshots:
       jest-each: 30.4.1
       jest-matcher-utils: 30.4.1
       jest-message-util: 30.4.1
-      jest-runtime: 30.4.1
+      jest-runtime: 30.4.2
       jest-snapshot: 30.4.1
       jest-util: 30.4.1
       p-limit: 3.1.0
@@ -5717,15 +5695,15 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  jest-cli@30.4.1(@types/node@25.6.2):
+  jest-cli@30.4.2(@types/node@25.6.2):
     dependencies:
-      '@jest/core': 30.4.1
+      '@jest/core': 30.4.2
       '@jest/test-result': 30.4.1
       '@jest/types': 30.4.1
       chalk: 4.1.2
       exit-x: 0.2.2
       import-local: 3.2.0
-      jest-config: 30.4.1(@types/node@25.6.2)
+      jest-config: 30.4.2(@types/node@25.6.2)
       jest-util: 30.4.1
       jest-validate: 30.4.1
       yargs: 17.7.2
@@ -5736,7 +5714,7 @@ snapshots:
       - supports-color
       - ts-node
 
-  jest-config@30.4.1(@types/node@25.6.2):
+  jest-config@30.4.2(@types/node@25.6.2):
     dependencies:
       '@babel/core': 7.29.0
       '@jest/get-type': 30.1.0
@@ -5749,12 +5727,12 @@ snapshots:
       deepmerge: 4.3.1
       glob: 10.5.0
       graceful-fs: 4.2.11
-      jest-circus: 30.4.1
+      jest-circus: 30.4.2
       jest-docblock: 30.4.0
       jest-environment-node: 30.4.1
       jest-regex-util: 30.4.0
       jest-resolve: 30.4.1
-      jest-runner: 30.4.1
+      jest-runner: 30.4.2
       jest-util: 30.4.1
       jest-validate: 30.4.1
       parse-json: 5.2.0
@@ -5848,7 +5826,7 @@ snapshots:
 
   jest-regex-util@30.4.0: {}
 
-  jest-resolve-dependencies@30.4.1:
+  jest-resolve-dependencies@30.4.2:
     dependencies:
       jest-regex-util: 30.4.0
       jest-snapshot: 30.4.1
@@ -5866,7 +5844,7 @@ snapshots:
       slash: 3.0.0
       unrs-resolver: 1.11.1
 
-  jest-runner@30.4.1:
+  jest-runner@30.4.2:
     dependencies:
       '@jest/console': 30.4.1
       '@jest/environment': 30.4.1
@@ -5884,7 +5862,7 @@ snapshots:
       jest-leak-detector: 30.4.1
       jest-message-util: 30.4.1
       jest-resolve: 30.4.1
-      jest-runtime: 30.4.1
+      jest-runtime: 30.4.2
       jest-util: 30.4.1
       jest-watcher: 30.4.1
       jest-worker: 30.4.1
@@ -5893,7 +5871,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  jest-runtime@30.4.1:
+  jest-runtime@30.4.2:
     dependencies:
       '@jest/environment': 30.4.1
       '@jest/fake-timers': 30.4.1
@@ -5989,12 +5967,12 @@ snapshots:
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
-  jest@30.4.1(@types/node@25.6.2):
+  jest@30.4.2(@types/node@25.6.2):
     dependencies:
-      '@jest/core': 30.4.1
+      '@jest/core': 30.4.2
       '@jest/types': 30.4.1
       import-local: 3.2.0
-      jest-cli: 30.4.1(@types/node@25.6.2)
+      jest-cli: 30.4.2(@types/node@25.6.2)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros

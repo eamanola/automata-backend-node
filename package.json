@@ -1,6 +1,6 @@
 {
   "name": "media-library-server",
-  "version": "0.1.130",
+  "version": "0.1.131",
   "description": "media library viewer / playlist",
   "main": "dist/index.bundle.js",
   "type": "commonjs",
@@ -36,7 +36,7 @@
     "eslint-stylistic-airbnb": "^3.1.0",
     "globals": "^17.6.0",
     "husky": "^9.1.7",
-    "jest": "^30.4.1",
+    "jest": "^30.4.2",
     "mongodb-memory-server": "^11.1.0",
     "nodemon": "^3.1.14",
     "supertest": "^7.2.2",
