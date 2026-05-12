@@ -12,13 +12,6 @@ const { initCache, connectCache, closeCache } = cache;
 const { logger } = utils;
 
 let db;
-<<<<<<< HEAD
-=======
-
-const shutdown = (server) => async () => {
-  if (db) await closeDB(db);
-  logger.info('db connection closed');
->>>>>>> 2f563e1 (use app builder api)
 
 const shutdown = (server) => async () => {
   if (db) {
