@@ -10,8 +10,6 @@ COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .
 RUN mkdir -p -m 0700 ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts
 RUN --mount=type=ssh HUSKY=0 pnpm i
 
-# test specific
-# cache memory-server-binaries before src/
 FROM base AS prod-base
 # dev uses src as volumes
 COPY src src
