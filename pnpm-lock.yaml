@@ -1227,21 +1227,14 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-<<<<<<< HEAD
   automata-app@git+https://git@github.com:eamanola/automata-app.git#1484225cdb1648a06af515327b70bbcbb75ddd2c:
     resolution: {commit: 1484225cdb1648a06af515327b70bbcbb75ddd2c, repo: git@github.com:eamanola/automata-app.git, type: git}
     version: 0.1.7
-=======
-  automata-app@git+https://git@github.com:eamanola/automata-app.git#be136884d4d074fb554bc34bdefda4f456527f7a:
-    resolution: {commit: be136884d4d074fb554bc34bdefda4f456527f7a, repo: git@github.com:eamanola/automata-app.git, type: git}
-    version: 0.1.3
->>>>>>> 2f563e1 (use app builder api)
 
   automata-cache@https://codeload.github.com/eamanola/automata-cache/tar.gz/92f3e8934ff1196ba265f2012f1e48bdf8855ba6:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/eamanola/automata-cache/tar.gz/92f3e8934ff1196ba265f2012f1e48bdf8855ba6}
     version: 0.0.12
 
-<<<<<<< HEAD
   automata-db@git+https://git@github.com:eamanola/automata-db.git#acf4b47cc19b7dbde9ee615b00c9f58095be2b8d:
     resolution: {commit: acf4b47cc19b7dbde9ee615b00c9f58095be2b8d, repo: git@github.com:eamanola/automata-db.git, type: git}
     version: 0.1.3
@@ -1253,23 +1246,6 @@ packages:
   automata-user-management@git+https://git@github.com:eamanola/automata-user-management.git#c0fe7f616493cd654c078861ad88cdeb0fa00ed5:
     resolution: {commit: c0fe7f616493cd654c078861ad88cdeb0fa00ed5, repo: git@github.com:eamanola/automata-user-management.git, type: git}
     version: 0.3.2
-=======
-  automata-db@git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744:
-    resolution: {commit: 1c2e79fa8f0cdb95752dec7b03aa70105a881744, repo: git@github.com:eamanola/automata-db.git, type: git}
-    version: 0.1.1
-
-  automata-email-verification@git+https://git@github.com:eamanola/automata-email-verification.git#16208b46205b7b8da9bf42ecb20d013c359e6443:
-    resolution: {commit: 16208b46205b7b8da9bf42ecb20d013c359e6443, repo: git@github.com:eamanola/automata-email-verification.git, type: git}
-    version: 0.1.2
-
-  automata-rest@git+https://git@github.com:eamanola/automata-rest.git#76f04ed1f421551b38e14f515bc79dcd42d57ef9:
-    resolution: {commit: 76f04ed1f421551b38e14f515bc79dcd42d57ef9, repo: git@github.com:eamanola/automata-rest.git, type: git}
-    version: 0.1.1
-
-  automata-user-management@git+https://git@github.com:eamanola/automata-user-management.git#69c2c42f14aff66477c7dffcf08585b3cd68ba7c:
-    resolution: {commit: 69c2c42f14aff66477c7dffcf08585b3cd68ba7c, repo: git@github.com:eamanola/automata-user-management.git, type: git}
-    version: 0.1.4
->>>>>>> 2f563e1 (use app builder api)
 
   automata-utils@git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f:
     resolution: {commit: 5632caceabde51451bae400352435b884b64121f, repo: git@github.com:eamanola/automata-utils.git, type: git}
@@ -4676,16 +4652,9 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-<<<<<<< HEAD
   automata-app@git+https://git@github.com:eamanola/automata-app.git#1484225cdb1648a06af515327b70bbcbb75ddd2c:
     dependencies:
       automata-user-management: git+https://git@github.com:eamanola/automata-user-management.git#c0fe7f616493cd654c078861ad88cdeb0fa00ed5
-=======
-  automata-app@git+https://git@github.com:eamanola/automata-app.git#be136884d4d074fb554bc34bdefda4f456527f7a:
-    dependencies:
-      automata-email-verification: git+https://git@github.com:eamanola/automata-email-verification.git#16208b46205b7b8da9bf42ecb20d013c359e6443
-      automata-user-management: git+https://git@github.com:eamanola/automata-user-management.git#69c2c42f14aff66477c7dffcf08585b3cd68ba7c
->>>>>>> 2f563e1 (use app builder api)
       automata-utils: git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f
       cors: 2.8.6
       dotenv: 17.4.2
@@ -4709,11 +4678,7 @@ snapshots:
       - '@node-rs/xxhash'
       - '@opentelemetry/api'
 
-<<<<<<< HEAD
   automata-db@git+https://git@github.com:eamanola/automata-db.git#acf4b47cc19b7dbde9ee615b00c9f58095be2b8d:
-=======
-  automata-db@git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744:
->>>>>>> 2f563e1 (use app builder api)
     dependencies:
       better-sqlite3: 12.9.0
       dotenv: 17.4.2
@@ -4728,34 +4693,10 @@ snapshots:
       - snappy
       - socks
 
-<<<<<<< HEAD
   automata-rest@git+https://git@github.com:eamanola/automata-rest.git#a393cd593bae89af3c759a1921a33b92b9fd40b3:
     dependencies:
       automata-cache: https://codeload.github.com/eamanola/automata-cache/tar.gz/92f3e8934ff1196ba265f2012f1e48bdf8855ba6
       automata-db: git+https://git@github.com:eamanola/automata-db.git#acf4b47cc19b7dbde9ee615b00c9f58095be2b8d
-=======
-  automata-email-verification@git+https://git@github.com:eamanola/automata-email-verification.git#16208b46205b7b8da9bf42ecb20d013c359e6443:
-    dependencies:
-      automata-db: git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744
-      automata-utils: git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f
-      dotenv: 17.4.2
-      express: 5.2.1
-      yup: 1.7.1
-    transitivePeerDependencies:
-      - '@aws-sdk/credential-providers'
-      - '@mongodb-js/zstd'
-      - gcp-metadata
-      - kerberos
-      - mongodb-client-encryption
-      - snappy
-      - socks
-      - supports-color
-
-  automata-rest@git+https://git@github.com:eamanola/automata-rest.git#76f04ed1f421551b38e14f515bc79dcd42d57ef9:
-    dependencies:
-      automata-cache: https://codeload.github.com/eamanola/automata-cache/tar.gz/17044177f61dc0cfee06c60adc5e56ada523fc2a
-      automata-db: git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744
->>>>>>> 2f563e1 (use app builder api)
       automata-utils: git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f
       dotenv: 17.4.2
       express: 5.2.1
@@ -4772,15 +4713,9 @@ snapshots:
       - socks
       - supports-color
 
-<<<<<<< HEAD
   automata-user-management@git+https://git@github.com:eamanola/automata-user-management.git#c0fe7f616493cd654c078861ad88cdeb0fa00ed5:
     dependencies:
       automata-db: git+https://git@github.com:eamanola/automata-db.git#acf4b47cc19b7dbde9ee615b00c9f58095be2b8d
-=======
-  automata-user-management@git+https://git@github.com:eamanola/automata-user-management.git#69c2c42f14aff66477c7dffcf08585b3cd68ba7c:
-    dependencies:
-      automata-db: git+https://git@github.com:eamanola/automata-db.git#1c2e79fa8f0cdb95752dec7b03aa70105a881744
->>>>>>> 2f563e1 (use app builder api)
       automata-utils: git+https://git@github.com:eamanola/automata-utils.git#5632caceabde51451bae400352435b884b64121f
       bcrypt: 6.0.0
       dotenv: 17.4.2
