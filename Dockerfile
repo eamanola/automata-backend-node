@@ -1,47 +1,43 @@
 # base
 # use non alpine for mongodb-memory-server
-FROM node:22 AS base
+FROM node:24 AS base
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update
 RUN apt install git
+RUN npm install -g pnpm
 WORKDIR /app
-COPY package.json package-lock.json .
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .
 RUN mkdir -p -m 0700 ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts
-RUN --mount=type=ssh HUSKY=0 npm install
+RUN --mount=type=ssh HUSKY=0 pnpm i
 
 # test specific
 # cache memory-server-binaries before src/
 FROM base AS prod-base
-COPY ./bin/download-memory-server-binaries.js .
-ENV MONGOMS_VERSION=7.0.11
-ENV RUNTIME_DOWNLOAD=true
-RUN node ./download-memory-server-binaries.js
 # dev uses src as volumes
-COPY src/config.js src/config.js
-COPY src/lib src/lib
+COPY src src
 
 # lint
 FROM prod-base AS lint
-COPY .eslintrc.cjs .
-COPY .eslintignore .
-RUN npm run lint
+COPY eslint.config.mjs .
+RUN pnpm run lint
 
 # test
 FROM lint AS test
 COPY jest jest
 COPY jest.config.cjs .
-RUN npm test
+COPY src/*.test.js src/
+RUN pnpm test --passWithNoTests
 
 # build
 FROM test AS build
 COPY webpack.config.cjs .
-RUN npm run build
+RUN pnpm run build
 
 # prod
-FROM node:22-alpine AS prod
+FROM node:24-alpine AS prod
 WORKDIR /app
-COPY package.json package-lock.json .
-RUN HUSKY=0 npm install --omit=dev
+COPY package.json .
+RUN HUSKY=0 pnpm i --prod
 COPY --from=build /app/dist/index.bundle.js dist/index.bundle.js
 USER node
 CMD npm start

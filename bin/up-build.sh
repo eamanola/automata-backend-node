@@ -22,5 +22,6 @@ do
 done
 
 docker compose ${composefiles[@]} build --no-cache --ssh default &&
+# docker compose ${composefiles[@]} build --ssh default &&
 
 docker compose --env-file $envfile ${composefiles[@]} up ${others[@]}
