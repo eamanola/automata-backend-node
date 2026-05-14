@@ -1,5 +1,8 @@
+const { drivers } = require('automata-db');
+
 const { DB_URL, DB_ENGINE } = require('../src/config');
-global.db = require('automata-db')({ DB_ENGINE });
+
+global.db = drivers({ DB_ENGINE });
 
 const SKIP_PATHS = [];
 const { testPath } = expect.getState();

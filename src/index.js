@@ -1,12 +1,10 @@
-/* eslint-disable  import-x/order */
+const cache = require('automata-cache');
+const { drivers } = require('automata-db');
+const { utils } = require('automata-utils');
+
 const {
   DB_ENGINE, PORT, REDIS_URL, DB_URL,
 } = require('./config');
-
-const cache = require('automata-cache');
-const db = require('automata-db')({ DB_ENGINE });
-const { utils } = require('automata-utils');
-
 const appWrapper = require('./app');
 
 const REDIS_ENABLED = !!REDIS_URL;
@@ -14,6 +12,11 @@ const DB_ENABLED = !!DB_URL;
 
 const { initCache, connectCache, closeCache } = cache;
 const { logger } = utils;
+
+let db;
+if (DB_ENABLED) {
+  db = drivers({ DB_ENGINE });
+}
 
 const shutdown = (server) => async () => {
   if (db) {
