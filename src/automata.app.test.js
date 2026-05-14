@@ -6,7 +6,7 @@ let api;
 
 describe('automata-app', () => {
   beforeAll(() => {
-    api = supertest(appBuilder({ db: global.client }));
+    api = supertest(appBuilder({ db: global.db }));
   });
 
   it('should start', async () => {

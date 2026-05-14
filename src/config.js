@@ -28,6 +28,7 @@ const SQLITE = IS_TEST ? SQLITE_TEST_FILE : SQLITE_FILE;
 const DB_URL = DB_ENGINE === 'mongo' ? MONGO : SQLITE;
 
 module.exports = {
+  DB_ENGINE,
   DB_URL,
   EMAIL_VERIFICATION_SECRET,
   NODE_ENV,
@@ -35,7 +36,3 @@ module.exports = {
   REDIS_URL: IS_TEST ? REDIS_TEST_URL : REDIS_URL,
   SECRET,
 };
-
-if (IS_TEST) {
-  module.exports.DB_ENGINE = DB_ENGINE;
-}

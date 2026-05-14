@@ -1,9 +1,13 @@
+/* eslint-disable  import-x/order */
+const {
+  DB_ENGINE, PORT, REDIS_URL, DB_URL,
+} = require('./config');
+
 const cache = require('automata-cache');
-const { connectDB, closeDB } = require('automata-db');
+const db = require('automata-db')({ DB_ENGINE });
 const { utils } = require('automata-utils');
 
 const appWrapper = require('./app');
-const { PORT, REDIS_URL, DB_URL } = require('./config');
 
 const REDIS_ENABLED = !!REDIS_URL;
 const DB_ENABLED = !!DB_URL;
@@ -11,11 +15,9 @@ const DB_ENABLED = !!DB_URL;
 const { initCache, connectCache, closeCache } = cache;
 const { logger } = utils;
 
-let db;
-
 const shutdown = (server) => async () => {
   if (db) {
-    await closeDB(db);
+    await db.closeDB();
     logger.info('db connection closed');
   }
 
@@ -32,7 +34,7 @@ const shutdown = (server) => async () => {
 
 const start = async () => {
   if (DB_ENABLED) {
-    db = await connectDB(DB_URL);
+    await db.connectDB(DB_URL);
     logger.info('DB Connected');
   }
 

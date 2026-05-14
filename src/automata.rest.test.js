@@ -1,12 +1,11 @@
 const supertest = require('supertest');
 const { router: restRouter } = require('automata-rest');
-const { dropTable } = require('automata-db');
 
 const appBuilder = require('./app');
 
 describe('automata-rest', () => {
   it('should save, edit & retrieve resources', async () => {
-    const db = global.client;
+    const { db } = global;
 
     const table = { columns: [{ name: 'foo', required: true, type: 'string' }], name: 'test' };
     const router = restRouter(null, { db, table, userRequired: false });
@@ -34,6 +33,6 @@ describe('automata-rest', () => {
     expect(get2.status).toBe(200);
     expect(get2.body.result).toEqual(expect.objectContaining({ foo: 'baz', id }));
 
-    await dropTable(db, table.name);
+    await db.dropTable(table.name);
   });
 });
