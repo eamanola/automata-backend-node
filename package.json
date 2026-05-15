@@ -1,6 +1,6 @@
 {
   "name": "media-library-server",
-  "version": "0.1.149",
+  "version": "0.1.150",
   "description": "media library viewer / playlist",
   "main": "dist/index.bundle.js",
   "type": "commonjs",
@@ -33,8 +33,23 @@
     "globals": "^17.6.0",
     "husky": "^9.1.7",
     "jest": "^30.4.2",
-    "mongodb-memory-server": "^11.1.0",
     "nodemon": "^3.1.14",
     "supertest": "^7.2.2"
+  },
+  "peerDependencies": {
+    "better-sqlite3": "^12.10.0",
+    "mongodb": "^7.2.0",
+    "mongodb-memory-server": "^11.1.0"
+  },
+  "peerDependenciesMeta": {
+    "better-sqlite3": {
+      "optional": true
+    },
+    "mongodb": {
+      "optional": true
+    },
+    "mongodb-memory-server": {
+      "optional": true
+    }
   }
 }
