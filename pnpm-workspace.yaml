@@ -11,6 +11,7 @@ allowBuilds:
   better-sqlite3: true
   mongodb-memory-server: true
   unrs-resolver: true
+  esbuild: true
 
 # hmmm
 blockExoticSubdeps: false
