@@ -1,0 +1,18 @@
+[submodule "automata/automata-db"]
+	path = automata/automata-db
+	url = git@github.com:eamanola/automata-db.git
+[submodule "automata/automata-cache"]
+	path = automata/automata-cache
+	url = git@github.com:eamanola/automata-cache.git
+[submodule "automata/automata-app"]
+	path = automata/automata-app
+	url = git@github.com:eamanola/automata-app.git
+[submodule "automata/automata-rest"]
+	path = automata/automata-rest
+	url = git@github.com:eamanola/automata-rest.git
+[submodule "automata/automata-user-management"]
+	path = automata/automata-user-management
+	url = git@github.com:eamanola/automata-user-management.git
+[submodule "automata/automata-utils"]
+	path = automata/automata-utils
+	url = git@github.com:eamanola/automata-utils.git
