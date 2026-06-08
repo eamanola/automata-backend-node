@@ -1,9 +1,12 @@
 {
   "name": "media-library-server",
-  "version": "0.1.153",
+  "version": "0.1.154",
   "description": "media library viewer / playlist",
   "main": "dist/index.bundle.js",
   "type": "commonjs",
+  "exports": {
+    ".": "./dist/index.bundle.js"
+  },
   "scripts": {
     "test": "SECRET=123 jest",
     "lint": "eslint .",

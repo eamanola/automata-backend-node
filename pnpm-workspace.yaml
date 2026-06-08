@@ -3,9 +3,8 @@ allowBuilds:
   automata-cache: true
   automata-db: true
   automata-rest: true
-  automata-utils: true
-  automata-email-verification: true
   automata-user-management: true
+  automata-utils: true
 
   bcrypt: true
   better-sqlite3: true
@@ -15,3 +14,12 @@ allowBuilds:
 
 # hmmm
 blockExoticSubdeps: false
+
+# local dev
+# overrides:
+#   automata-app: "file:../automata-app"
+#   automata-cache: "file:../automata-cache"
+#   automata-db: "file:../automata-db"
+#   automata-rest: "file:../automata-rest"
+#   automata-user-management: "file:../automata-user-management"
+#   automata-utils: "file:../automata-utils"
