@@ -1,6 +1,6 @@
 {
   "name": "media-library-server",
-  "version": "0.1.158",
+  "version": "0.1.159",
   "description": "media library viewer / playlist",
   "main": "dist/index.bundle.js",
   "type": "commonjs",
@@ -14,7 +14,7 @@
     "dev": "nodemon --env-file=.env.development.local src/index.js",
     "start": "node dist/index.bundle.js",
     "prepare": "husky || true",
-    "postinstall": "node node_modules/mongodb-memory-server/postinstall.js"
+    "mongodb-memory-server-postinstall": "node node_modules/mongodb-memory-server/postinstall.js"
   },
   "author": "",
   "license": "ISC",
