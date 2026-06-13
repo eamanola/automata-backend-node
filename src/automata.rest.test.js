@@ -7,7 +7,7 @@ describe('automata-rest', () => {
   it('should save, edit & retrieve resources', async () => {
     const { db } = global;
 
-    const table = { columns: [{ name: 'foo', required: true, type: 'string' }], name: 'test' };
+    const table = { columns: [{ name: 'foo', required: true, type: String }], name: 'test' };
     const router = restRouter(null, { db, table, userRequired: false });
 
     const app = appBuilder({ db });

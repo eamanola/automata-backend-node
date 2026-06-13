@@ -16,8 +16,7 @@ allowBuilds:
 blockExoticSubdeps: false
 
 # local automata dev
-# rm -rf node_modules && pnpm i; to update packages
-# pnpm up; to overrides package.json paths
+# pnpm up to switch
 # overrides:
 #   automata-app: "file:./automata/automata-app"
 #   automata-cache: "file:./automata/automata-cache"
