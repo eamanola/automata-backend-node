@@ -1,6 +1,6 @@
-const cache = require('automata-cache');
+const { connectCache, closeCache } = require('automata-cache');
 const { drivers } = require('automata-db');
-const { utils } = require('automata-utils');
+const { logger } = require('automata-utils');
 
 const {
   DB_ENGINE, PORT, REDIS_URL, DB_URL,
@@ -10,9 +10,7 @@ const appWrapper = require('./app');
 const REDIS_ENABLED = !!REDIS_URL;
 const DB_ENABLED = !!DB_URL;
 
-const { initCache, connectCache, closeCache } = cache;
-const { logger } = utils;
-
+let cache;
 let db;
 if (DB_ENABLED) {
   db = drivers({ DB_ENGINE });
@@ -25,7 +23,7 @@ const shutdown = (server) => async () => {
   }
 
   if (REDIS_ENABLED) {
-    await closeCache();
+    await closeCache(cache);
     logger.info('cache connection closed');
   }
 
@@ -42,12 +40,11 @@ const start = async () => {
   }
 
   if (REDIS_ENABLED) {
-    await initCache();
-    await connectCache();
+    cache = await connectCache();
     logger.info('Cache Connected');
   }
 
-  const server = appWrapper({ db }).listen(PORT, () => {
+  const server = appWrapper({ cache, db }).listen(PORT, () => {
     logger.info(`Running on port ${PORT}`);
   });
 

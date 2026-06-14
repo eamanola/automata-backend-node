@@ -18,12 +18,12 @@ blockExoticSubdeps: false
 # local automata dev
 # pnpm up to switch
 # overrides:
-#   automata-app: "file:./automata/automata-app"
-#   automata-cache: "file:./automata/automata-cache"
-#   automata-db: "file:./automata/automata-db"
-#   automata-rest: "file:./automata/automata-rest"
-#   automata-user-management: "file:./automata/automata-user-management"
-#   automata-utils: "file:./automata/automata-utils"
+#   automata-app: "file:./automata/automata-app"                #4
+#   automata-cache: "file:./automata/automata-cache"            #1
+#   automata-db: "file:./automata/automata-db"                  #1
+#   automata-rest: "file:./automata/automata-rest"              #3
+#   automata-user-management: "file:./automata/automata-user-management"  #2
+#   automata-utils: "file:./automata/automata-utils"            #1
 
 # revert
 # overrides:
