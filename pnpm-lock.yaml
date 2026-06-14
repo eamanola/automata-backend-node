@@ -10,19 +10,19 @@ importers:
     dependencies:
       automata-app:
         specifier: github:eamanola/automata-app
-        version: https://codeload.github.com/eamanola/automata-app/tar.gz/3247becb95756411deb9e37613a603921e79e359(better-sqlite3@12.10.0)(mongodb-memory-server@11.2.0)(mongodb@7.3.0)
+        version: https://codeload.github.com/eamanola/automata-app/tar.gz/3247becb95756411deb9e37613a603921e79e359(better-sqlite3@12.10.1)(mongodb-memory-server@11.2.0)(mongodb@7.3.0)
       automata-cache:
         specifier: github:eamanola/automata-cache
-        version: https://codeload.github.com/eamanola/automata-cache/tar.gz/2527c3925df1a7f1fd0ba190fb183a5477cc0314
+        version: https://codeload.github.com/eamanola/automata-cache/tar.gz/5bf8aaeff151ae69dbdec90efebbe7427c4d5592(redis@5.12.1)
       automata-db:
         specifier: github:eamanola/automata-db
-        version: https://codeload.github.com/eamanola/automata-db/tar.gz/ce8ae5526c4f0b15a182b74b52d142bd06d8c7b7(better-sqlite3@12.10.0)(mongodb-memory-server@11.2.0)(mongodb@7.3.0)
+        version: https://codeload.github.com/eamanola/automata-db/tar.gz/ce8ae5526c4f0b15a182b74b52d142bd06d8c7b7(better-sqlite3@12.10.1)(mongodb-memory-server@11.2.0)(mongodb@7.3.0)
       automata-utils:
         specifier: github:eamanola/automata-utils
         version: https://codeload.github.com/eamanola/automata-utils/tar.gz/ba59cd00e595c520dfc8d5f53343de053f044608
       better-sqlite3:
         specifier: ^12.10.0
-        version: 12.10.0
+        version: 12.10.1
       dotenv:
         specifier: ^17.4.2
         version: 17.4.2
@@ -32,6 +32,9 @@ importers:
       mongodb-memory-server:
         specifier: ^11.1.0
         version: 11.2.0
+      redis:
+        specifier: ^5.12.1
+        version: 5.12.1
     devDependencies:
       '@eslint/js':
         specifier: ^10.0.1
@@ -41,7 +44,7 @@ importers:
         version: 5.10.0(eslint@10.5.0)
       automata-rest:
         specifier: github:eamanola/automata-rest
-        version: https://codeload.github.com/eamanola/automata-rest/tar.gz/000543bb037129fb3ff25fac6de887315ca39b41(better-sqlite3@12.10.0)(mongodb-memory-server@11.2.0)(mongodb@7.3.0)
+        version: https://codeload.github.com/eamanola/automata-rest/tar.gz/000543bb037129fb3ff25fac6de887315ca39b41(better-sqlite3@12.10.1)(mongodb-memory-server@11.2.0)(mongodb@7.3.0)(redis@5.12.1)
       bump-pkg-json:
         specifier: ^0.1.3
         version: 0.1.3
@@ -892,12 +895,17 @@ packages:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
   automata-app@https://codeload.github.com/eamanola/automata-app/tar.gz/3247becb95756411deb9e37613a603921e79e359:
-    resolution: {gitHosted: true, integrity: sha512-lbgATJVvg2lyFNOxmi8NQIDBLjEImpdlQDSPxYuWpNVXeEAEJ/FxASzdokBAFf9Z4j7xwULl4xP36491OBdr8w==, tarball: https://codeload.github.com/eamanola/automata-app/tar.gz/3247becb95756411deb9e37613a603921e79e359}
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/eamanola/automata-app/tar.gz/3247becb95756411deb9e37613a603921e79e359}
     version: 0.1.25
 
-  automata-cache@https://codeload.github.com/eamanola/automata-cache/tar.gz/2527c3925df1a7f1fd0ba190fb183a5477cc0314:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/eamanola/automata-cache/tar.gz/2527c3925df1a7f1fd0ba190fb183a5477cc0314}
-    version: 0.0.25
+  automata-cache@https://codeload.github.com/eamanola/automata-cache/tar.gz/5bf8aaeff151ae69dbdec90efebbe7427c4d5592:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/eamanola/automata-cache/tar.gz/5bf8aaeff151ae69dbdec90efebbe7427c4d5592}
+    version: 0.0.27
+    peerDependencies:
+      redis: ^5.12.1
+    peerDependenciesMeta:
+      redis:
+        optional: true
 
   automata-db@https://codeload.github.com/eamanola/automata-db/tar.gz/ce8ae5526c4f0b15a182b74b52d142bd06d8c7b7:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/eamanola/automata-db/tar.gz/ce8ae5526c4f0b15a182b74b52d142bd06d8c7b7}
@@ -1023,8 +1031,8 @@ packages:
     resolution: {integrity: sha512-cU8v/EGSrnH+HnxV2z0J7/blxH8gq7Xh2JFT6Aroax7UohdmiJJlxApMxtKfuI7z68NvvVcmR78k2LbT6efhRg==}
     engines: {node: '>= 18'}
 
-  better-sqlite3@12.10.0:
-    resolution: {integrity: sha512-CyzaZRQKyHkB2ZInfTTl2nvT33EbDpjkLEbE8/Zck3Ll6O0qqvuGdrJ45HgtH+HykRg88ITY3AdreBGN70aBSQ==}
+  better-sqlite3@12.10.1:
+    resolution: {integrity: sha512-HfFtzCqnSfwB3+HroF6PSKzyh+7RfNMGPCzHFUZXRlvrPCb4P3cvxKZNN43Sr7IrkofqQZM+gIvffGpA8VvqgA==}
     engines: {node: 20.x || 22.x || 23.x || 24.x || 25.x || 26.x}
 
   binary-extensions@2.3.0:
@@ -3467,9 +3475,9 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  automata-app@https://codeload.github.com/eamanola/automata-app/tar.gz/3247becb95756411deb9e37613a603921e79e359(better-sqlite3@12.10.0)(mongodb-memory-server@11.2.0)(mongodb@7.3.0):
+  automata-app@https://codeload.github.com/eamanola/automata-app/tar.gz/3247becb95756411deb9e37613a603921e79e359(better-sqlite3@12.10.1)(mongodb-memory-server@11.2.0)(mongodb@7.3.0):
     dependencies:
-      automata-user-management: https://codeload.github.com/eamanola/automata-user-management/tar.gz/91979b4f6b29f48d77f6f59f0458c7f2e8c3ce87(better-sqlite3@12.10.0)(mongodb-memory-server@11.2.0)(mongodb@7.3.0)
+      automata-user-management: https://codeload.github.com/eamanola/automata-user-management/tar.gz/91979b4f6b29f48d77f6f59f0458c7f2e8c3ce87(better-sqlite3@12.10.1)(mongodb-memory-server@11.2.0)(mongodb@7.3.0)
       automata-utils: https://codeload.github.com/eamanola/automata-utils/tar.gz/ba59cd00e595c520dfc8d5f53343de053f044608
       cors: 2.8.6
       dotenv: 17.4.2
@@ -3481,42 +3489,39 @@ snapshots:
       - mongodb-memory-server
       - supports-color
 
-  automata-cache@https://codeload.github.com/eamanola/automata-cache/tar.gz/2527c3925df1a7f1fd0ba190fb183a5477cc0314:
+  automata-cache@https://codeload.github.com/eamanola/automata-cache/tar.gz/5bf8aaeff151ae69dbdec90efebbe7427c4d5592(redis@5.12.1):
     dependencies:
       dotenv: 17.4.2
+    optionalDependencies:
       redis: 5.12.1
-    transitivePeerDependencies:
-      - '@node-rs/xxhash'
-      - '@opentelemetry/api'
 
-  automata-db@https://codeload.github.com/eamanola/automata-db/tar.gz/ce8ae5526c4f0b15a182b74b52d142bd06d8c7b7(better-sqlite3@12.10.0)(mongodb-memory-server@11.2.0)(mongodb@7.3.0):
+  automata-db@https://codeload.github.com/eamanola/automata-db/tar.gz/ce8ae5526c4f0b15a182b74b52d142bd06d8c7b7(better-sqlite3@12.10.1)(mongodb-memory-server@11.2.0)(mongodb@7.3.0):
     dependencies:
       dotenv: 17.4.2
       yup: 1.7.1
     optionalDependencies:
-      better-sqlite3: 12.10.0
+      better-sqlite3: 12.10.1
       mongodb: 7.3.0
       mongodb-memory-server: 11.2.0
 
-  automata-rest@https://codeload.github.com/eamanola/automata-rest/tar.gz/000543bb037129fb3ff25fac6de887315ca39b41(better-sqlite3@12.10.0)(mongodb-memory-server@11.2.0)(mongodb@7.3.0):
+  automata-rest@https://codeload.github.com/eamanola/automata-rest/tar.gz/000543bb037129fb3ff25fac6de887315ca39b41(better-sqlite3@12.10.1)(mongodb-memory-server@11.2.0)(mongodb@7.3.0)(redis@5.12.1):
     dependencies:
-      automata-cache: https://codeload.github.com/eamanola/automata-cache/tar.gz/2527c3925df1a7f1fd0ba190fb183a5477cc0314
-      automata-db: https://codeload.github.com/eamanola/automata-db/tar.gz/ce8ae5526c4f0b15a182b74b52d142bd06d8c7b7(better-sqlite3@12.10.0)(mongodb-memory-server@11.2.0)(mongodb@7.3.0)
+      automata-cache: https://codeload.github.com/eamanola/automata-cache/tar.gz/5bf8aaeff151ae69dbdec90efebbe7427c4d5592(redis@5.12.1)
+      automata-db: https://codeload.github.com/eamanola/automata-db/tar.gz/ce8ae5526c4f0b15a182b74b52d142bd06d8c7b7(better-sqlite3@12.10.1)(mongodb-memory-server@11.2.0)(mongodb@7.3.0)
       automata-utils: https://codeload.github.com/eamanola/automata-utils/tar.gz/ba59cd00e595c520dfc8d5f53343de053f044608
       dotenv: 17.4.2
       express: 5.2.1
       yup: 1.7.1
     transitivePeerDependencies:
-      - '@node-rs/xxhash'
-      - '@opentelemetry/api'
       - better-sqlite3
       - mongodb
       - mongodb-memory-server
+      - redis
       - supports-color
 
-  automata-user-management@https://codeload.github.com/eamanola/automata-user-management/tar.gz/91979b4f6b29f48d77f6f59f0458c7f2e8c3ce87(better-sqlite3@12.10.0)(mongodb-memory-server@11.2.0)(mongodb@7.3.0):
+  automata-user-management@https://codeload.github.com/eamanola/automata-user-management/tar.gz/91979b4f6b29f48d77f6f59f0458c7f2e8c3ce87(better-sqlite3@12.10.1)(mongodb-memory-server@11.2.0)(mongodb@7.3.0):
     dependencies:
-      automata-db: https://codeload.github.com/eamanola/automata-db/tar.gz/ce8ae5526c4f0b15a182b74b52d142bd06d8c7b7(better-sqlite3@12.10.0)(mongodb-memory-server@11.2.0)(mongodb@7.3.0)
+      automata-db: https://codeload.github.com/eamanola/automata-db/tar.gz/ce8ae5526c4f0b15a182b74b52d142bd06d8c7b7(better-sqlite3@12.10.1)(mongodb-memory-server@11.2.0)(mongodb@7.3.0)
       automata-utils: https://codeload.github.com/eamanola/automata-utils/tar.gz/ba59cd00e595c520dfc8d5f53343de053f044608
       bcrypt: 6.0.0
       dotenv: 17.4.2
@@ -3637,7 +3642,7 @@ snapshots:
       node-addon-api: 8.8.0
       node-gyp-build: 4.8.4
 
-  better-sqlite3@12.10.0:
+  better-sqlite3@12.10.1:
     dependencies:
       bindings: 1.5.0
       prebuild-install: 7.1.3
