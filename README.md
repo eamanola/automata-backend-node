@@ -1,64 +1,82 @@
-# empty-backend
+# automata-backend-node
 
-A base repo for backend development
+A base environment setup & configurations for backend development, using node & express.
 
-## pre-req
+## includes
 
-either via docker, or
+### docker setups for
 
-install redis, mongo, and node.
+- mongo
+- redis
+- test
+- production
+- dev
 
-## Usage
+## usage & dev
 
-### development
+- Add your app routes to src/app.js, or replace the file.
+- update bin/* to use the components needed by the app
+- other?
 
-Add your implementations to app.js.
+### .env
 
-### env
+see see .env.sample for options
 
-create .env.development.local, .env.test.local, and .env.production.local in project root. see env.sample for available options
+#### files referenced in setups
+
+- .env.development.local,
+- .env.test.local
+- .env.production.local
 
 ### run
 
 #### dev build
 
-with docker
+##### docker:
 
-```./bin/dev.sh```
+  ```
+  ./bin/dev.sh
+  ```
 
-locally
+##### locally:
 
-```npm run dev```
+  ```
+  pnpm run dev
+  ```
 
 #### production build
 
-with docker
+##### docker:
 
-```./bin/start.sh```
+  ```
+  ./bin/start.sh
+  ```
 
-locally
+##### locally:
 
 ```
-  npm run build
-  npm run start
+  pnpm run build
+  pnpm run start
 ```
 
-## reserved endpoints
+## Other notes
 
-see lib/app.js for up to date reserve endpoint
+### reserved endpoints
 
-### /signup
+a preconfigured express app is provided. see [automata-app](https://github.com/eamanola/automata-app) for up to date reserved endpoints, and more details.
+
+#### POST /signup
 
 for creating new users
 
-### /login
+#### POST /login
 
 for for authenticating users
 
-### /email-verification
+#### /email-verification
 
 for verifying email
 
-## TODOs
+#### GET /health
 
-* upgrade to eslint@9, when airbnb adds support
+for server health

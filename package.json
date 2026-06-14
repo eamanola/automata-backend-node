@@ -1,6 +1,6 @@
 {
   "name": "media-library-server",
-  "version": "0.1.163",
+  "version": "0.1.164",
   "description": "media library viewer / playlist",
   "main": "dist/index.bundle.js",
   "type": "commonjs",
@@ -16,8 +16,23 @@
     "prepare": "husky || true",
     "mongodb-memory-server-postinstall": "node node_modules/mongodb-memory-server/postinstall.js"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "backend",
+    "backend development",
+    "express",
+    "docker",
+    "preconfigured"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eamanola/automata-backend-node.git"
+  },
+  "author": {
+    "name": "Ehsun Amanolahi",
+    "email": "ehsun.amanolahi@gmail.com",
+    "url": "https://codeberg.org/eamanola"
+  },
+  "license": "AGPL-3.0-or-later",
   "dependencies": {
     "automata-app": "github:eamanola/automata-app",
     "automata-cache": "github:eamanola/automata-cache",
