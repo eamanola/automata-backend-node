@@ -1,36 +1,34 @@
-const {
-  closeCache, connectCache, getItem, hasItem, removeItem, setItem,
-} = require('automata-cache');
+const cacheFactory = require('automata-cache');
 
 const { REDIS_TEST_URL } = require('./config');
 
 describe('automata-cache', () => {
-  let cache;
+  const cache = cacheFactory({ AUTOMATA_CACHE: 'use-mock' });
 
   beforeAll(async () => {
-    cache = await connectCache(REDIS_TEST_URL);
+    await cache.connectCache(REDIS_TEST_URL);
   });
 
   afterAll(async () => {
-    await closeCache(cache);
+    await cache.closeCache();
   });
 
   it('should save, retrive, and remove values', async () => {
     const TEST_KEY = 'foo';
     const val = 'bar';
 
-    expect(await hasItem(cache, TEST_KEY)).toBe(false);
+    expect(await cache.hasItem(TEST_KEY)).toBe(false);
 
-    await setItem(cache, TEST_KEY, val);
+    await cache.setItem(TEST_KEY, val);
 
-    expect(await hasItem(cache, TEST_KEY)).toBe(true);
+    expect(await cache.hasItem(TEST_KEY)).toBe(true);
 
-    expect(await getItem(cache, TEST_KEY)).toBe(val);
+    expect(await cache.getItem(TEST_KEY)).toBe(val);
 
-    await removeItem(cache, TEST_KEY);
+    await cache.removeItem(TEST_KEY);
 
-    expect(await getItem(cache, TEST_KEY)).toBeFalsy();
+    expect(await cache.getItem(TEST_KEY)).toBeFalsy();
 
-    expect(await hasItem(cache, TEST_KEY)).toBe(false);
+    expect(await cache.hasItem(TEST_KEY)).toBe(false);
   });
 });

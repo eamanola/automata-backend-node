@@ -1,4 +1,4 @@
-const { connectCache, closeCache } = require('automata-cache');
+const cacheFactory = require('automata-cache');
 const { drivers } = require('automata-db');
 const { logger } = require('automata-utils');
 
@@ -15,6 +15,9 @@ let db;
 if (DB_ENABLED) {
   db = drivers({ DB_ENGINE });
 }
+if (REDIS_ENABLED) {
+  cache = cacheFactory({ AUTOMATA_CACHE: 'redis' });
+}
 
 const shutdown = (server) => async () => {
   if (db) {
@@ -23,7 +26,7 @@ const shutdown = (server) => async () => {
   }
 
   if (REDIS_ENABLED) {
-    await closeCache(cache);
+    await cache.closeCache();
     logger.info('cache connection closed');
   }
 
@@ -40,7 +43,7 @@ const start = async () => {
   }
 
   if (REDIS_ENABLED) {
-    cache = await connectCache();
+    await cache.connectCache(REDIS_URL);
     logger.info('Cache Connected');
   }
 
