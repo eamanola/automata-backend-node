@@ -1,3 +1,5 @@
+Moved to [codeberg](https://codeberg.org/eamanola/automata-backend-node)
+
 # automata-backend-node
 
 A base environment setup & configurations for backend development, using node & express.
